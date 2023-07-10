@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-<link rel="stylesheet" href="./src/styles/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-</head>
-<body>
-<main class="container">
-  <!-- Sign-up form -->
-  <form action="submit" class="form">
-    <h1 class="form__title">Stay updated!</h1>
-    <p class="form__text">Join 60,000+ product managers receiving monthly updates on:</p>
-    <p class="form__text"><span class="form__icon"><img src="./src/assets/images/icon-list.svg" alt=""></span> Product discovery and building what matters</p>
-    <p class="form__text"><span  class="form__icon"><img src="./src/assets/images/icon-list.svg" alt=""></span> Measuring to ensure updates are a success</p>
-    <p class="form__text"><span  class="form__icon"><img src="./src/assets/images/icon-list.svg" alt=""></span> And much more!</p>
-    <label class="form__label" for="email">Email address</label>
-    <input type="email" id="email" name="email" placeholder="email@company.com" required>
-    <button>Subscribe to monthly newsletter</button>
-  </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <img src="./src/assets/images/illustration-sign-up-desktop.svg" alt="">
-</main>
-  <!-- Success message start -->
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body class="body--center">
+    <main class="container">
+      <!-- Sign-up form -->
+      <form action="submit" class="form">
+        <h1 class="form__title">Stay updated!</h1>
+        <p class="form__text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <p class="form__text">
+          <span class="form__icon"
+            ><img src="./src/assets/images/icon-list.svg" alt=""
+          /></span>
+          Product discovery and building what matters
+        </p>
+        <p class="form__text">
+          <span class="form__icon"
+            ><img src="./src/assets/images/icon-list.svg" alt=""
+          /></span>
+          Measuring to ensure updates are a success
+        </p>
+        <p class="form__text">
+          <span class="form__icon"
+            ><img src="./src/assets/images/icon-list.svg" alt=""
+          /></span>
+          And much more!
+        </p>
+        <label class="form__label" for="email">Email address</label>
+        <input
+          class="form__input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@company.com"
+          required
+        />
+        <button class="form__btnSubmit">Subscribe to monthly newsletter</button>
+      </form>
 
-  <!-- Thanks for subscribing!
+      <img src="./src/assets/images/illustration-sign-up-desktop.svg" alt="" />
+    </main>
+    <!-- Success message start -->
+
+    <!-- Thanks for subscribing!
 
   A confirmation email has been sent to ash@loremcompany.com. 
   Please open it and click the button inside to confirm your subscription.
 
   Dismiss message -->
 
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Bruno Araújo</a>.
-  </div>
-</body>
+    <!-- Success message end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Bruno Araújo</a>.
+    </div>
+  </body>
 </html>
