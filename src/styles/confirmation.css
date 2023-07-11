@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+:root {
+  --primary-tomato: hsl(4, 100%, 67%);
+  --primary-tomatoDark: hsla(4, 100%, 67%, 0.25);
+  --darkSlateGrey: hsl(234, 29%, 20%);
+  --charcoalGrey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--darkSlateGrey);
+  height: 100vh;
+  margin: 0;
+}
+
+.body--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.message__container {
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+  padding: 40px;
+  border-radius: 30px;
+  background-color: var(--white);
+  color: var(--darkSlateGrey);
+}
+
+.message__title {
+  font-size: 3rem;
+  line-height: 2.75rem;
+}
+.message__text {
+  font-size: 0.9rem;
+}
+
+#emailSubscribed{
+    font-weight: 700;
+}
+
+.message__btnSubmit{
+    color: var(--white);
+    background-color: var(--darkSlateGrey);
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.message__btnSubmit:hover{
+    cursor: pointer;
+    background-color: var(--primary-tomato);
+    transition: 0.3s ease;
+}

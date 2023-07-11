@@ -10,6 +10,7 @@
 
 :root {
   --primary-tomato: hsl(4, 100%, 67%);
+  --primary-tomatoDark: hsla(4, 100%, 67%, 0.25);
   --darkSlateGrey: hsl(234, 29%, 20%);
   --charcoalGrey: hsl(235, 18%, 26%);
   --grey: hsl(231, 7%, 60%);
@@ -36,7 +37,7 @@ body {
   width: 60vw;
   padding: 20px;
   border-radius: 30px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .form {
@@ -63,6 +64,12 @@ body {
   margin-right: 15px;
 }
 
+.form__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .form__label {
   color: var(--darkSlateGrey);
   font-weight: 700;
@@ -70,8 +77,14 @@ body {
   margin-block: 20px 5px;
 }
 
-.form__invalidText{
-  
+.form__invalidText {
+  font-size: 0.75rem;
+  color: var(--primary-tomato);
+  display: none;
+}
+
+.form__invalidText-active{
+  display: flex;
 }
 
 .form__input {
@@ -82,7 +95,18 @@ body {
   padding: 15px;
 }
 
-.form__input:hover{
+.form__input-invalid{
+  border: 1px solid var(--primary-tomato);
+  background-color: var(--primary-tomatoDark);
+  color: var(--primary-tomato);
+  outline-color: var(--primary-tomato);
+}
+
+.form__input-invalid::placeholder{
+  color: var(--primary-tomato);
+}
+
+.form__input:hover {
   cursor: pointer;
   border: 1px solid var(--charcoalGrey);
 }
@@ -96,9 +120,10 @@ body {
   border-radius: 7px;
 }
 
-.form__btnSubmit:hover{
+.form__btnSubmit:hover {
   cursor: pointer;
   background-color: var(--primary-tomato);
+  transition: 0.30s ease;
 }
 
 .attribution {

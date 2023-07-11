@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../styles/confirmation.css" />
+    <title>confirmation message</title>
+  </head>
+  <body class="body--center">
+    <main>
+      <div class="message__container">
+        <img src="../assets/images/icon-success.svg" class="message__icon" alt="" />
+        <h1 class="message__title">Thanks for subscribing!</h1>
+        <p class="message__text">
+          A confirmation email has been sent to
+          <span id="emailSubscribed"></span>. Please open it and click the
+          button inside to confirm your subscription.
+        </p>
+        <button class="message__btnSubmit" onclick="redirectToIndex()">Dismiss message</button>
+      </div>
+    </main>
+  </body>
+  <script src="../js/vaditaion.js"></script>
+</html>

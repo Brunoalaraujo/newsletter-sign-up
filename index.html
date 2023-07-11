@@ -11,7 +11,6 @@
       sizes="32x32"
       href="./src/assets/images/favicon-32x32.png"
     />
-
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
@@ -19,7 +18,7 @@
   <body class="body--center">
     <main class="container">
       <!-- Sign-up form -->
-      <form action="submit" class="form">
+      <form action="./src/pages/confirmation.html" method="get" class="form">
         <h1 class="form__title">Stay updated!</h1>
         <p class="form__text">
           Join 60,000+ product managers receiving monthly updates on:
@@ -42,13 +41,17 @@
           /></span>
           And much more!
         </p>
-        <label class="form__label" for="email">Email address</label>
-        <span class="form__invalidText">Valid email required</span>
+        <div class="form__container">
+          <label class="form__label" for="email-input">Email address</label>
+          <span id="spam-alert" class="form__invalidText"
+            >Valid email required</span
+          >
+        </div>
         <input
           class="form__input"
           type="email"
-          id="email"
-          name="email"
+          id="email-input"
+          name="email-input"
           placeholder="email@company.com"
           required
         />
@@ -56,20 +59,9 @@
           Subscribe to monthly newsletter
         </button>
       </form>
-
       <img src="./src/assets/images/illustration-sign-up-desktop.svg" alt="" />
     </main>
-    <!-- Success message start -->
-
-    <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-    <!-- Success message end -->
-
+    <!--Footer-->
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
