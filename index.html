@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <!-- SRC Links -->
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="./src/assets/images/favicon-32x32.png"
     />
 
     <title>
@@ -43,6 +43,7 @@
           And much more!
         </p>
         <label class="form__label" for="email">Email address</label>
+        <span class="form__invalidText">Valid email required</span>
         <input
           class="form__input"
           type="email"
@@ -51,7 +52,9 @@
           placeholder="email@company.com"
           required
         />
-        <button class="form__btnSubmit">Subscribe to monthly newsletter</button>
+        <button class="form__btnSubmit" type="submit" onclick="validation()">
+          Subscribe to monthly newsletter
+        </button>
       </form>
 
       <img src="./src/assets/images/illustration-sign-up-desktop.svg" alt="" />
@@ -74,4 +77,5 @@
       >. Coded by <a href="#">Bruno Araújo</a>.
     </div>
   </body>
+  <script src="./src/js/vaditaion.js"></script>
 </html>

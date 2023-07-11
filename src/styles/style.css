@@ -70,6 +70,10 @@ body {
   margin-block: 20px 5px;
 }
 
+.form__invalidText{
+  
+}
+
 .form__input {
   margin-block: 5px;
   height: 50px;
