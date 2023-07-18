@@ -34,7 +34,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 60vw;
+  width: 65vw;
   padding: 20px;
   border-radius: 30px;
   background-color: var(--white);
@@ -43,14 +43,13 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  padding-inline: 20px;
 }
 
 .form__title {
   color: var(--darkSlateGrey);
   margin-bottom: 20px;
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 2rem;
 }
 
 .form__text {
@@ -124,6 +123,15 @@ body {
   cursor: pointer;
   background-color: var(--primary-tomato);
   transition: 0.30s ease;
+}
+
+.imgContainer{
+  display: flex;
+  height: auto;
+}
+
+.imgContainer__img{
+  width: 100%;
 }
 
 .attribution {
