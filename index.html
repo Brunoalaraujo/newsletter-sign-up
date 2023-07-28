@@ -18,49 +18,50 @@
   <body class="body--center">
     <main class="container">
       <!-- Sign-up form -->
-      <form action="./src/pages/confirmation.html?email-input=" method="get" class="form">
-        <h1 class="form__title">Stay updated!</h1>
-        <p class="form__text">
-          Join 60,000+ product managers receiving monthly updates on:
-        </p>
-        <p class="form__text">
-          <span class="form__icon"
-            ><img src="./src/assets/images/icon-list.svg" alt=""
-          /></span>
-          Product discovery and building what matters
-        </p>
-        <p class="form__text">
-          <span class="form__icon"
-            ><img src="./src/assets/images/icon-list.svg" alt=""
-          /></span>
-          Measuring to ensure updates are a success
-        </p>
-        <p class="form__text">
-          <span class="form__icon"
-            ><img src="./src/assets/images/icon-list.svg" alt=""
-          /></span>
-          And much more!
-        </p>
-        <div class="form__container">
-          <label class="form__label" for="email-input">Email address</label>
-          <span id="spam-alert" class="form__invalidText"
-            >Valid email required</span
-          >
-        </div>
-        <input
-          class="form__input"
-          type="email"
-          id="email-input"
-          name="email-input"
-          placeholder="email@company.com"
-          required
-        />
-        <button class="form__btnSubmit" type="submit" onclick="validation()">
-          Subscribe to monthly newsletter
-        </button>
-      </form>
+      <div class="formContainer">
+        <form action="./src/pages/confirmation.html?email-input=" method="get">
+          <h1 class="form__title">Stay updated!</h1>
+          <p class="form__text">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <p class="form__text">
+            <span class="form__icon"
+              ><img src="./src/assets/images/icon-list.svg" alt=""
+            /></span>
+            Product discovery and building what matters
+          </p>
+          <p class="form__text">
+            <span class="form__icon"
+              ><img src="./src/assets/images/icon-list.svg" alt=""
+            /></span>
+            Measuring to ensure updates are a success
+          </p>
+          <p class="form__text">
+            <span class="form__icon"
+              ><img src="./src/assets/images/icon-list.svg" alt=""
+            /></span>
+            And much more!
+          </p>
+          <div class="form__container">
+            <label class="form__label" for="email-input">Email address</label>
+            <span id="spam-alert" class="form__invalidText"
+              >Valid email required</span
+            >
+          </div>
+          <input
+            class="form__input"
+            type="email"
+            id="email-input"
+            name="email-input"
+            placeholder="email@company.com"
+            required
+          />
+          <button class="form__btnSubmit" type="submit" onclick="validation()">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
       <div class="imgContainer">
-        <img class="imgContainer__img" src="./src/assets/images/illustration-sign-up-desktop.svg" alt="" />
       </div>
     </main>
     <!--Footer-->
@@ -68,7 +69,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Bruno Araújo</a>.
+      >. Coded by <a href="https://www.linkedin.com/in/brunoandradel-a-dev/" target="_blank">Bruno Araújo</a>.
     </div>
   </body>
   <script src="./src/js/validation.js"></script>
