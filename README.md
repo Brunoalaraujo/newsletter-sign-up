@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://newsletter-sign-up-bay.vercel.app/)
+- Live Site URL: [Newsletter-sign-up](https://newsletter-sign-up-bay.vercel.app/)
 
 ## My process
 
@@ -85,7 +85,7 @@ CSS Code Sample:
 }
 ```
 
-#### Manipulating the DOM and Client-Side Data Validation
+#### Manipulating the DOM
 
 Another significant learning point was the manipulation of the DOM to add or remove classes dynamically. This allowed me to create interactive user experiences by updating the appearance or behavior of elements in response to user actions.
 
